@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="menu1.master.cs" Inherits="gastosfamiliares.menu1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    
+<link href ="css/menucss.css" rel="stylesheet" />
+
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <nav class="dropdownmenu">
+  <ul>
+    <li><a href="#">Home</a></li>
+    
+    <li><a href="#">catalogo</a>
+      <ul id="submenu">
+        <li><a href="usuarios.aspx">Usuarios </a></li>
+        <li><a href="principal.aspx">REPORTES</a></li>
+       
+      </ul>
+    </li>
+    <li><a href="noticias.aspx">noticias</a></li>
+  
+  </ul>
+</nav>
+
+
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
